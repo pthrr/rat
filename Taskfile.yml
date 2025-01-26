@@ -1,0 +1,8 @@
+# https://taskfile.dev
+
+version: '3'
+
+tasks:
+  check:
+    cmds:
+      - cargo build --release && clap-validator validate target/release/librat.so

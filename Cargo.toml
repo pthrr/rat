@@ -1,0 +1,12 @@
+[package]
+name = "rat"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "rat"  # The name can be anything, but should match your library name
+crate-type = ["cdylib"]  # This tells Cargo to build a dynamic library
+
+[dependencies]
+clack-plugin = { git = "https://github.com/prokopyl/clack.git", version = "0.1.0" }
+clap-sys = "0.5.0"
